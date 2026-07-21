@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact FreeFood Restaurant">
+    <title>Contact | FreeFood Restaurant</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>FreeFood</h1>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="page-banner">
+<h2>Book Your Table</h2>
+<p>Reserve your seat today.</p>
+</section>
+
+<main>
+
+<section class="contact-section">
+
+<form action="#" method="post">
+
+<fieldset>
+
+<legend>Reservation Form</legend>
+
+<label for="fullname">Full Name</label>
+<input
+type="text"
+id="fullname"
+name="fullname"
+placeholder="Enter your full name"
+required
+minlength="3">
+
+<label for="email">Email</label>
+<input
+type="email"
+id="email"
+name="email"
+placeholder="example@email.com"
+required>
+
+<label for="password">Password</label>
+<input
+type="password"
+id="password"
+name="password"
+placeholder="Create password"
+required
+minlength="6">
+
+<label for="phone">Phone Number</label>
+<input
+type="tel"
+id="phone"
+name="phone"
+placeholder="61xxxxxxx"
+pattern="[0-9]{9,12}"
+required>
+
+<label for="guests">Number of Guests</label>
+
+<select id="guests" name="guests">
+
+<option value="">Select</option>
+<option>1 Person</option>
+<option>2 People</option>
+<option>3 People</option>
+<option>4 People</option>
+<option>5+ People</option>
+
+</select>
+
+<h3>Dining Option</h3>
+
+<label>
+<input type="radio" name="service" value="Indoor" required>
+Indoor
+</label>
+
+<label>
+<input type="radio" name="service" value="Outdoor">
+Outdoor
+</label>
+
+<h3>Extra Services</h3>
+
+<label>
+<input type="checkbox" name="extra" value="Wifi">
+Free WiFi
+</label>
+
+<label>
+<input type="checkbox" name="extra" value="Parking">
+Parking
+</label>
+
+<label>
+<input type="checkbox" name="extra" value="Birthday">
+Birthday Decoration
+</label>
+
+<label for="message">Special Request</label>
+
+<textarea
+id="message"
+name="message"
+rows="5"
+placeholder="Write your message here..."></textarea>
+
+<input type="submit" value="Book Now" class="btn">
+
+</fieldset>
+
+</form>
+
+</section>
+
+<section class="location">
+
+<h2>Our Location</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Mogadishu&output=embed"
+width="100%"
+height="350"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+&copy; 2026 FreeFood Restaurant | All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
